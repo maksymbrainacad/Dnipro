@@ -1,0 +1,28 @@
+body {
+	background-color: #E1DFB9;
+}
+table {
+	width: 100%;
+}
+.h1 {
+	text-align: center;
+	background-color: #8FA09B;
+}
+h1 {
+	color: #FFFFFF;
+}
+.a {
+	width: 20%;
+	background-color: #F0F0F0;
+}
+.a li {
+	padding-top: 10px;
+	list-style-type: none;
+}
+.h2 {
+	width: 80%;
+	background-color: #FFFFFF;
+}
+h2 {
+	color: #820042;
+}
