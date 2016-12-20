@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>User input form</title>
+</head>
+<h1>User input form</h1>
+<body>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Personal Particular</legend>
+            <table>
+                <tr>
+                    <td> Name
+                        <input type="text" name="Name" value=""></td>
+                </tr>
+                <tr>
+                    <td> Password
+                        <input type="password" name="Password" value=""></td>
+                </tr>
+            </table>
+            <div>
+                Gender:
+                <label> Male
+                  <input type="radio" name="gender" value="">
+            </label>
+                <label> Female
+                  <input type="radio" name="gender" value="">
+            </label>
+                <br>
+                Age:
+                <select name="Age">
+                <option> > 1 year old </option>
+                <option> < 1 year old </option>
+              </select>
+        </fieldset>
+    </form>
+
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>Languages</legend>
+        <label>
+          <input type="checkbox">
+          Java
+          <input type="checkbox">
+          C/C++
+          <input type="checkbox">
+          C#
+        </label>
+      </fieldset>
+    </form>
+
+    <form action="index.html" method="post">
+    <fieldset>
+      <legend>Instruction</legend>
+      <textarea name="Instruction" placeholder="Enter your instruction here..." rows="7" cols="40"></textarea>
+    </fieldset>
+  </form>
+    <input type="submit" name="send" value="SEND">
+    <input type="reset" name="clear" value="CLEAR">
+</body>
+
+</html>
