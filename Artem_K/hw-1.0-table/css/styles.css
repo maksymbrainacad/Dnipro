@@ -1,0 +1,50 @@
+.table1, td {
+  width: 60%;
+  margin: auto;
+  border: 2px solid #063436;
+  margin-top: 4%;
+}
+
+.td1 {
+  width: 30%;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+.ul1, .ul2 {
+list-style-type: none;
+}
+
+.ul1 a, .ul2 a {
+  color: #09041f;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.ul1 a:visited {
+    color: grey;
+}
+
+.ul1 a:hover {
+  color: #09041f;
+  font-weight: bold;
+
+}
+
+.ul1 a:active {
+  color: orangered;
+  background-color: none;
+}
+
+
+.ol1 a {
+  text-decoration: none;
+}
+
+.bottom {
+  text-align: center;
+  font-family: fantasy;
+  font-weight: bold;
+}
