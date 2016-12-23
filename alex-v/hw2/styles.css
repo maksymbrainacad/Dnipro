@@ -1,0 +1,178 @@
+
+
+
+.cali {
+    text-align: center; text-decoration: underline; text-shadow: 1px 1px #e5e900;
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+div {
+  box-sizing: border-box;
+  position: static;
+}
+
+.main {
+    border: 2px solid #000000;
+    width: 100%;
+}
+
+.golden-state {
+  border: 1px solid #000000;
+  width: 100%;
+}
+
+.ca-gs {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.float-col {
+  border: 0 solid #000000;
+  width: 100%;
+}
+
+.links {
+  width: 15%;
+  height: 3400px;
+  border: 1px solid #000000;
+  float: left;
+}
+
+.exp-ca {
+  width: 85%;
+  height: 3400px;
+  border: 1px solid #000000;
+  float: left;
+}
+
+.exp {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px;
+}
+
+.cities-places {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.sf {
+  margin-left: 40px;
+}
+
+.sf-heading {
+  font-weight: bold;
+}
+
+.la {
+  margin-left: 40px;
+}
+
+.la-heading {
+  font-weight: bold;
+}
+
+  .sac {
+    margin-left: 40px;
+  }
+
+  .sac-heading {
+    font-weight: bold;
+  }
+
+  .rw {
+    margin-left: 40px;
+  }
+
+  .rw-heading {
+    font-weight: bold;
+  }
+
+  .lt {
+    margin-left: 40px;
+  }
+
+  .lt-heading {
+    font-weight: bold;
+  }
+
+.float-col::after {
+  clear: both;
+  display: block;
+  content: ' ';
+}
+
+.dev-info {
+  border: 1px solid #000000;
+  width: 100%;
+}
+
+.dev-as {
+  margin: 8px;
+}
+
+
+.col-1 {
+  width: 100%;
+  float: left;
+}
+
+.col-2 {
+  width: 50%;
+  float: left;
+}
+
+.col-3 {
+  width: 33.33%;
+  float: left;
+}
+
+.col-4 {
+  width: 25%;
+  float: left;
+}
+
+.col-5 {
+  width: 20%;
+  float: left;
+}
+
+.col-6 {
+  width: 16.66%;
+  float: left;
+}
+
+.col-7 {
+  width: 14.28571%;
+  float: left;
+}
+
+.col-8 {
+  width: 12.5%;
+  float: left;
+}
+
+.col-9 {
+  width: 11.11%;
+  float: left;
+}
+
+.col-10 {
+  width: 10%;
+  float: left;
+}
+
+.col-11 {
+  width: 9.090909%;
+  float: left;
+}
+
+.col-12 {
+  width: 8.33%;
+  float: left;
+}
