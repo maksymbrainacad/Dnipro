@@ -1,0 +1,9 @@
+.table1 td:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.table2 tr:hover  {
+  background-color: orangered;
+  color: white;
+}

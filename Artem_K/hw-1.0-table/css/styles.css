@@ -1,20 +1,52 @@
+body {
+background-color: grey;
+background-image: url(01.svg), url(01.svg);
+background-size: 95px;
+/*размер картинки*/
+background-repeat: repeat-y, repeat-y;
+background-position: 5% 2%, 95% 2%;
+/*позиция по координатам для левого и правого бекграунда картинки*/
+background-attachment: fixed;
+/* Фиксируем фон веб-страницы */
+}
+
+h2 span {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
 .table1, td {
   width: 60%;
   margin: auto;
   border: 2px solid #063436;
-  margin-top: 4%;
+  margin-top: 2%;
+  background-color: white;
 }
 
 .td1 {
   width: 30%;
 }
 
-h1,h2 {
+h1 {
+  margin-top: 6%;
+  margin-left: 50%;
+}
+
+h2 {
   text-align: center;
 }
 
-.ul1, .ul2 {
+img {
+  opacity: 0.9;
+
+}
+
+.ul1 {
 list-style-type: none;
+}
+
+.ul2 {
+list-style-type: upper-roman;
 }
 
 .ul1 a, .ul2 a {
@@ -30,14 +62,12 @@ list-style-type: none;
 .ul1 a:hover {
   color: #09041f;
   font-weight: bold;
-
+  text-shadow: 4px 4px 6px orangered;
 }
 
 .ul1 a:active {
   color: orangered;
-  background-color: none;
 }
-
 
 .ol1 a {
   text-decoration: none;
@@ -47,4 +77,11 @@ list-style-type: none;
   text-align: center;
   font-family: fantasy;
   font-weight: bold;
+}
+
+.table1 td img {
+  max-height: 150px;
+  max-width: 200px;
+  float: left;
+  margin: 20px;
 }
