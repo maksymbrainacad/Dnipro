@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+}
+
+.row::after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+
+.col-6 {
+  float: left;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  width: 16.66%;
+}
+
+.box {
+  height: 100px;
+  width: 150px;
+  background: orangered;
+  /*margin-left: 150px;*/
+  margin: 0 0 0 150px;
+  position: relative;
+}
+
+.box::before {
+  content: 'before';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  border: 1px solid #0000ff;
+}
+
+.box::after{
+  content: 'after';
+  position: absolute;
+  top: 0;
+  right: -40px;
+}

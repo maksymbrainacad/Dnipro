@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.vertical-menu {
+    list-style-type: none;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+    width: 200px;
+    background-color: #ccc;
+}
+
+.vertical-menu .menu-item {
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+.vertical-menu .menu-item a {
+  font: 24px Arial, Verdana;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0px 5px 40px;
+}
