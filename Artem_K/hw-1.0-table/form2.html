@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>form</title>
+</head>
+
+<body>
+
+        <table align="right" width="35%">
+            <tr>
+                <td>
+                  <form action="index.html" method="post">
+                    <fieldset>
+                        <legend>Зарегистрируйтесь в Google</legend>
+                        <label>Как вас зовут<br><input required type="text" name="name" value="" placeholder="Имя"></label>
+                        <input required type="text" name="secondname" value="" placeholder="Фамилия"><br><br> Придумайте имя пользователя<br>
+                        <input required type="text" name="login" value="">@gmail.com<br><br> Придумайте пароль<br>
+                        <input required type="password" name="password" value=""><br><br> Подтвердите пароль<br>
+                        <input required type="password" name="password2" value=""><br><br> Дата рождения<br>
+                        <input required type="number" name="datebirthday" value="" placeholder="день" min="1" max="31">
+                        <select class="" name="mounth">
+          <option value="01">январь</option>
+          <option value="02">февраль</option>
+          <option value="03">март</option>
+          <option value="04">апрель</option>
+          <option value="05">май</option>
+          <option value="06">июнь</option>
+          <option value="07">июль</option>
+          <option value="08">август</option>
+          <option value="09">сентябрь</option>
+          <option value="10">октябрь</option>
+          <option value="11">ноябрь</option>
+          <option value="12">декабрь</option>
+        </select>
+                        <input required type="number" name="year" value="" placeholder="год" min="1900"><br><br> Пол
+                        <select required class="" name="gender">
+          <option value="woman">Женский</option>
+          <option value="man">Мужской</option>
+          <option value="notselected">Не указан</option>
+        </select><br><br> Мобильный телефон<br>
+                        <input type="text" name="phonenumber" value="+380"><br><br> Запасной адрес эл.почты<br>
+                        <input type="email" name="email" value=""><br><br> Страна
+                        <br>
+                        <select required class="" name="country">
+          <option value="ukraine">Украина</option>
+          <option value="us">США</option>
+          <option value="norway">Норвегия</option>
+        </select><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <input type="submit" name="submit" value="Далее">
+                    </fieldset>
+                </td>
+            </tr>
+    </form>
+
+    </table>
+</body>
+
+</html>
