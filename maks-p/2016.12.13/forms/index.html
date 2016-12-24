@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <form action="index.html" method="post">
+        <input type="number" name="" value="3" disabled min="1" max="31" step="2">
+
+        <input type="text" name="" value="" required />
+
+        <select name="" multiple size="2">
+          <option value="1">One</option>
+          <option value="2" selected>Two</option>
+          <option value="3" disabled>Three</option>
+        </select>
+
+        <div>
+          Subscribe:
+          <label>
+            Yes
+            <input type="radio" name="subscribe" value="yes" checked />
+          </label>
+          <label>
+            No
+            <input type="radio" name="subscribe" value="no" />
+          </label>
+
+          <input type="radio" name="subscribe" value="maybe" />
+        </div>
+
+        <div>
+          <input type="file" name="file" value="" >
+        </div>
+
+        <input type="hidden" name="secret" value="secret text">
+
+        <div>
+          <textarea name="name" maxlength="255">test text
+          </textarea>
+        </div>
+
+        <input type="submit" name="" value="send">
+    </form>
+</body>
+
+</html>

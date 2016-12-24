@@ -1,0 +1,58 @@
+body {
+
+}
+
+div {
+  font-size: 18px;
+  text-decoration:overline;;
+}
+
+.first {
+  color: #ff0000;
+  text-align:right;
+  text-decoration: underline;
+  font:bold 16px/24px Tahoma, Verdana, "Times new roman";
+  background-color: #0000ff;
+}
+.second {
+  color: #00ff00;
+  text-align: center;
+  text-decoration: none;
+  background: #0dc3a4 url('Un titled.jpg') no-repeat center;
+}
+
+.google-link,
+.google-link:link {
+  color: #ff0000;
+}
+
+.google-link:active {
+  color: #00ff00;
+}
+
+.google-link:visited {
+  color: #f10000;
+}
+
+.google-link:hover {
+  color: #0000ff;
+  text-decoration: none;
+}
+
+.box {
+  width: 100px;
+  border: 3px solid #000000;
+  text-align: center;
+}
+
+.box img {
+  max-width: 100px;
+  max-height: 30px;
+}
+.main-table tr:hover {
+
+}
+
+.main-table td {
+  width:auto;
+}
