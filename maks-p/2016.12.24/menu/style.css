@@ -25,4 +25,29 @@
   text-decoration: none;
   display: block;
   padding: 5px 0px 5px 40px;
+  position: relative;
+}
+.vertical-menu .menu-item a::before {
+  content: ' ';
+  height: 7px;
+  width: 7px;
+  background-color: #333;
+  position: absolute;
+  left: 25px;
+  top: 15px;
+}
+
+.vertical-menu .menu-item-active a {
+  color: #0000ff;
+}
+
+.vertical-menu .menu-item-active a::before {
+  background-color: #0000ff;
+}
+
+.vertical-menu .menu-item:hover {
+  background-color: #00ff00;
+}
+.vertical-menu .menu-item:last-child {
+  background-color: #ff0000;
 }
