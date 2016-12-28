@@ -5,17 +5,49 @@
     <meta charset="utf-8">
     <title>vertical-menu.html</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
     <nav>
+        <ul class="horizontal-menu">
+            <li class="horizontal-menu-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="horizontal-menu-item">
+              <a href="#">About us</a>
+            </li>
+            <li class="horizontal-menu-item horizontal-menu-item-active">
+              <a href="#">Clients</a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav>
         <ul class="vertical-menu">
             <li class="menu-item menu-item-active">
                 <a href="#">Item 1</a>
+                <ul class="vertical-sub-menu show-sub-menu">
+                    <li class="menu-item">
+                        <a href="#">sub 1</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">sub 2</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">sub 3</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu-item">
                 <a href="#">Item 2</a>
+                <ul class="vertical-sub-menu-hover">
+                    <li class="menu-item">
+                        <a href="#">hover 1</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">hover 2</a>
+                    </li>
+                </ul>
             </li>
             <li class="menu-item">
                 <a href="#">Item 3</a>
