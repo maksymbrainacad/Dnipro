@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Create your Google Account</title>
+</head>
+
+<body>
+    <form action="index.html" method="post">
+        <fieldset>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Name</strong>
+                        <br/>
+                        <input type="text" name="name" value="" placeholder="First" required>
+                        <input type="text" name="name" value="" placeholder="Last" required>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Choose your username</strong>
+                        <br/>
+                        <input type="email" name="username" value="" placeholder="@gmail.com" required>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Create a password</strong>
+                        <br/>
+                        <input type="password" name="password" value="" required>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Confirm your password</strong>
+                        <br/>
+                        <input type="password" name="passwordConfirmation" value="" required>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Birthday</strong>
+                        <br/>
+                        <select name="month" required>
+                              <option value="january">January</option>
+                              <option value="february">February</option>
+                              <option value="march">March</option>
+                              <option value="april">April</option>
+                              <option value="may">May</option>
+                              <option value="june">June</option>
+                              <option value="july">July</option>
+                              <option value="august">August</option>
+                              <option value="september">September</option>
+                              <option value="october">October</option>
+                              <option value="november">November</option>
+                              <option value="december">December</option>
+                            </select>
+                        <input type="text" name="day" value="" placeholder="Day" min="1" max="31" required>
+                        <input type="text" name="year" value="" placeholder="Year" required>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Gender</strong>
+                        <br/>
+                        <select name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                          </select>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Mobile phone</strong>
+                        <br/>
+                        <input type="text" name="mobilePhone" value="+380" required>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Your current email address</strong>
+                        <br/>
+                        <input type="text" name="currentEmailAddress" value="">
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table>
+                <tr>
+                    <td>
+                        <strong>Location</strong>
+                        <br/>
+                        <select name="country" required>
+                              <option value="ukraine">Ukraine</option>
+                              <option value="russia">Russia</option>
+                              <option value="unitedStates">United States</option>
+                            </select>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <table align="center">
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" value="Next step">
+                    </td>
+                </tr>
+            </table>
+            <br/>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
