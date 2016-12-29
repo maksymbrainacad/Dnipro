@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>formz</title>
+  </head>
+  <body>
+    <h1>User Input Form</h1>
+    <form class="" action="formz.html" method="post">
+      <fieldset>
+        <legend>Personal Particular</legend>
+        <table>
+          <tr>
+            <td colspan="2"><label>Name:<input type="text" name="Name"></label></td>
+          </tr>
+          <tr>
+            <td colspan="2"><label>Password:<input type="password" name="password"></label></td>
+          </tr>
+          <tr>
+            <td>
+              <label>Gender:
+                <label>
+                  <input type="radio" name="male" value="male">
+                  Male
+                </label>
+                <label>
+                  <input type="radio" name="female" value="female">
+                  Female
+                </label>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            Age:
+            <select name="">
+              <option value="1">< 1 year old</option>
+              <option value="2" selected> > 1 year old</option>
+            </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Languages</legend>
+        <input type="checkbox" name="Java" value="Java">
+        <label for="rememberMe">Java</label>
+        <input type="checkbox" name="C/C++" value="C/C++">
+        <label for="rememberMe">C/C++</label>
+        <input type="checkbox" name="C#" value="C#">
+        <label for="rememberMe">C#</label>
+      </fieldset>
+      <fieldset>
+        <legend>Instruction</legend>
+        <textarea name="Instruction" maxlength="255" placeholder="Enter your instruction here ..."></textarea>
+      </fieldset>
+      <button type="submit" name="send">SEND</button>
+      <button type="submit" name="clear">CLEAR</button>
+    </form>
+  </body>
+</html>
