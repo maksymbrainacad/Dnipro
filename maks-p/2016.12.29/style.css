@@ -1,0 +1,30 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: #0000ff;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.box:hover {
+    height: 150px;
+    width: 150px;
+    background-color: #00ff00;
+    transform: rotate(180deg) translate(100px, 100px);
+}
+
+.box2 {
+  height: 100px;
+  width: 100px;
+  background-color: #ff0000;
+  animation: slide 3s infinite;
+  transform: slide(20deg);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform:  translateX(100px);
+  }
+}
