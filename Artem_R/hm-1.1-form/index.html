@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport"
+									 content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Document</title>
+</head>
+<body>
+	<form action="http://google.com" name="user_form" method="get">
+		<h1><strong>User input Form</strong></h1>
+		<fieldset>
+			<legend>
+				Personal Particular
+			</legend>
+			<p>Name:<input type="text" name="name"></p>
+			<p>Password:<input type="password" name="password"></p>
+			Gender:<input type="radio" name="sex" value="Male">Male
+			<input type="radio" name="sex" value="Female">Female
+			<p>Age:<select name="age">
+			<option value="first" selected="selected">< 14 years old</option>
+			<option value="second">< 18 years old</option>
+			<option value="third">< 25 years old</option>
+			</select></p>
+		</fieldset>
+	</form>
+	<form action="http://google.com" name="user_form" method="get">
+		<fieldset>
+			<legend>
+				Languages
+			</legend>
+			<input type="checkbox" name="languages" value="Java">Java
+			<input type="checkbox" name="languages" value="C/C++">C/C++
+			<input type="checkbox" name="languages" value="C#">C#
+		</fieldset>
+	</form>
+	<form action="http://google.com" name="user_form" method="get">
+		<fieldset>
+			<legend>
+				Instruction
+			</legend>
+			<textarea name="instruction"  cols="40" rows="10" placeholder="Enter your instruction here..."></textarea><br>
+			<input type="button" value="SEND">
+			<input type="button" value="CLEAR">
+
+		</fieldset>
+	</form>
+</body>
+</html>
