@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Google</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <fieldset>
-    <div class='sign-up'>
-      <form name="createaccount" method="post">
-          <legend>Как вас зовут</legend>
-          <table>
-            <tr>
-              <td rowspan='2'>
-      <input type="text" name="username" value="" placeholder="Username" required/>
-              </td>
-            </tr>
-            <tr>
-              <td rowspan='2'>
-                <input type="password" name="password" placeholder="Password" required/>
-              </td>
-            </tr>
-          </table>
-          <legend>Придумайте имя пользователя</legend>
-          <table>
-            <tr>
-              <td>
-      <input type="email" name="username" value="" placeholder="@gmail.com" required/>
-              </td>
-            </tr>
-          </table>
-    </div>
-    <div>
-      <legend>Придумайте пароль</legend>
-      <input type="password" name="password" value=""  required/>
-      <legend>Подтвердите пароль</legend>
-      <input type="password" name="password" value=""  required/>
-    </div>
-    <div>
-      <legend>Дата рождения</legend>
-      <table>
-        <tr>
-          <td rowspan='2'>
-  <input type="number" name="day" value="" placeholder="День" min='1' max='31'/>
-          </td>
-        </tr>
-        <tr>
-          <td><select name='month'>Месяц />
+        <div class='sign-up'>
+            <form name="createaccount" method="post">
+                <legend>Как вас зовут</legend>
+                <table>
+                    <tr>
+                        <td rowspan='2'>
+                            <input type="text" name="username" value="" placeholder="Username" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan='2'>
+                            <input type="password" name="password" placeholder="Password" required/>
+                        </td>
+                    </tr>
+                </table>
+                <legend>Придумайте имя пользователя</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="email" name="username" value="" placeholder="@gmail.com" required/>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <div>
+            <legend>Придумайте пароль</legend>
+            <input type="password" name="password" value="" required/>
+            <legend>Подтвердите пароль</legend>
+            <input type="password" name="password" value="" required/>
+        </div>
+        <div>
+            <legend>Дата рождения</legend>
+            <table>
+                <tr>
+                    <td rowspan='2'>
+                        <input type="number" name="day" value="" placeholder="День" min='1' max='31' />
+                    </td>
+                </tr>
+                <tr>
+                    <td><select name='month'>Месяц />
             <option value="1">Январь</option>
             <option value="2" >Февраль</option>
             <option value="3" >Март</option>
@@ -59,50 +61,55 @@
             <option value="11" >Ноябрь</option>
             <option value="12" >Декабрь</option>
         </select></td>
-        <td rowspan="2">
-<input type="number" name="year" value="" placeholder="Год" min='1910' max='2017'/>
-        </td>
-        </tr>
-      </table>
-    </div>
+                    <td rowspan="2">
+                        <input type="number" name="year" value="" placeholder="Год" min='1910' max='2017' />
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-    <div>
-      <table>
-        <legend>Пол</legend>
-          <tr>
-            <td>
-              <select name='Sex'/>
-              <option value="Мужской">Мужской</option>
-              <option value="Женский" >Женский</option>
-              <option value="Не указан" >Не указан</option>
-              </td>
-          </tr>
-          <tr>
-            <td>
-              <legend>Мобильный телефон</legend>
-              <input type="number" name="phoneNumber" value="+380" required />
-            </td>
-          </tr>
-      </table>
-    </div>
-    <div>
-      <legend>Запасной адрес электронной почты</legend>
-      <input type="email" name="secureEmail" value="" />
-    </div>
-    <div>
-      <table>
-      <legend>Страна</legend>
-      <select name='Sex'/>
-      <option value="Ukraine">Ukraine</option>
-      <option value="USA" >USA</option>
-      <option value="Italy" >Italy</option>
-      <tr>
-    <td>
-      <input type="submit" value="Далее">
-    </td>
-  </tr>
-</table>
-  </div>
-</fieldset>
-  </body>
+        <div>
+            <table>
+                <legend>Пол</legend>
+                <tr>
+                    <td>
+                        <select name='Sex'>
+                        <option value="Мужской">Мужской</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Не указан">Не указан</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <legend>Мобильный телефон</legend>
+                        <input type="number" name="phoneNumber" value="+380" required />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <legend>Запасной адрес электронной почты</legend>
+            <input type="email" name="secureEmail" value="" />
+        </div>
+        <div>
+            <table>
+                <legend>Страна</legend>
+                <select name="country">
+                <option value="Ukraine">Ukraine</option>
+                <option value="USA">USA</option>
+                <option value="Italy">Italy</option>
+              </select>
+            </table>
+        </div>
+        <div>
+            <tr>
+                <td>
+                    <input type="submit" value="Далее">
+                </td>
+            </tr>
+        </div>
+    </fieldset>
+</body>
+
 </html>
