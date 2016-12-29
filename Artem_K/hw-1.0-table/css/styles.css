@@ -18,26 +18,29 @@ img {
   height: 100px;
   display: inline-block;
   margin-left: 5%;
-  padding: 10px 10px
+  padding: 10px 10px;
+  float: left;
 }
 
-h1 {
+.title {
   height: 100px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 17%;
-  position: inherit;
+  width: 50%;
+  margin: 5% 46%;
 }
 
-.shapka {
-  margin-top: 25px;
-  margin-left: 15%;
-  margin-right: 15%;
+.header {
+  margin: auto;
   height: 120px;
   width: 70%;
   background-color: white;
   border: 3px groove silver;
-  border-radius: 30px;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.header::after {
+  clear: both;
+  display: block;
+  content: ' ';
 }
 
 h2 {
@@ -50,36 +53,25 @@ h2 span {
 }
 
 
-/*.table1, td {
-  width: 60%;
-  margin: auto;
-  border: 2px solid #063436;
-  margin-top: 2%;
-  background-color: white;
-}*/
-
-/*.td1 {
-  width: 30%;
-}*/
 .container {
   width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  /*font-size: 0;*/
+  margin: auto;
+  border: 3px groove silver;
 }
+
 .menu {
   height: 370px;
-  width: 20%;
-  border: 2px solid black;
+  width: 30%;
+  border-right: 3px groove silver;
   display: inline-block;
   background-color: white;
   box-sizing: border-box;
+  float: left;
 }
 
 .main {
   height: 370px;
   width: 70%;
-  border: 2px solid black;
   display: inline-block;
   background-color: white;
   padding-left: 30px;
@@ -120,13 +112,10 @@ list-style-type: upper-roman;
 }
 
 .footer {
-  margin-left: 15%;
+  margin: auto;
   width: 70%;
   background-color: white;
   border: 3px groove silver;
-  border-radius: 30px;
-  text-align: center;
+  border-radius: 0px 0px 30px 30px;
   font-family: fantasy;
-  font-weight: bold;
-  box-sizing: border-box;
 }
