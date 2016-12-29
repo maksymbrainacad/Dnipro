@@ -7,3 +7,16 @@
   background-color: orangered;
   color: white;
 }
+
+table, tr, td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.textstrong {
+  font-weight: bold;
+}
+
+table {
+  margin: auto;
+}

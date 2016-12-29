@@ -1,6 +1,6 @@
 body {
 background-color: grey;
-background-image: url(01.svg), url(01.svg);
+background-image: url(../assets/background.svg), url(../assets/background.svg);
 background-size: 95px;
 /*размер картинки*/
 background-repeat: repeat-y, repeat-y;
@@ -79,35 +79,39 @@ h2 span {
 }
 
 
-.ul1 {
+.primary-menu {
 list-style-type: none;
 }
 
-.ul2 {
+.home-work-menu {
 list-style-type: upper-roman;
 }
 
-.ul1 a, .ul2 a {
+.home-work-menu-name {
+  font: 500 1.1em/1.1em Tahoma;
+}
+
+.primary-menu a, .home-work-menu a {
   color: #09041f;
   text-decoration: none;
   line-height: 30px;
 }
 
-.ul1 a:visited {
+.primary-menu a:visited {
     color: grey;
 }
 
-.ul1 a:hover {
+.primary-menu a:hover {
   color: #09041f;
   font-weight: bold;
   text-shadow: 4px 4px 6px orangered;
 }
 
-.ul1 a:active {
+.primary-menu a:active {
   color: orangered;
 }
 
-.ol1 a {
+.mountain-list a {
   text-decoration: none;
 }
 
