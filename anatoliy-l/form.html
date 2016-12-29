@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="form.html" method="get">
+      <fieldset>
+        <legend>Login form</legend>
+      <table>
+        <tr>
+          <td colspan="2"> <input type="email" name="username" placeholder="email"></td>
+        </tr>
+        <tr>
+          <td colspan="2"> <input type="password" name="password" placeholder="password"></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="rememberMe">Remember me?</label>
+            <input type="checkbox" name="remember-me" id="rememberMe" checked >
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Login"></td>
+        </tr>
+      </table>
+    </fieldset>
+    </form>
+
+    <form class="" action="form.html" method="post">
+      <fieldset>
+        <input type="number" name="" value="" min="1" max="31" step="2">
+        <input type="text" name="" value="" required="">
+        <select name="" multiple size="2">
+          <option value="1">One</option>
+          <option value="2" selected>Two</option>
+          <option value="3" disabled>Three</option>
+        </select>
+
+        <div>
+          Subscribe:
+          <label for="">Yes<input type="radio" name="Subscribe" value="Yes" checked></label>
+          <label for="">No<input type="radio" name="Subscribe" value="no"></label>
+          <label for="">Maybe<input type="radio" name="Subscribe" value="maybe"></label>
+
+        </div>
+
+        <div>
+            <input type="file" name="file" value="" accept=".xls,.xlsx">
+        </div>
+
+        <input type="hidden" name="secret" value="secret text">
+
+        <div>
+          <textarea name="name" maxlength="255">test text</textarea>
+        </div>
+
+        <input type="submit" name="" value="send">
+      </fieldset>
+    </form>
+  </body>
+</html>
