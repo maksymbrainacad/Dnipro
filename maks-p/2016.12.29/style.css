@@ -16,15 +16,20 @@
   height: 100px;
   width: 100px;
   background-color: #ff0000;
-  animation: slide 3s infinite;
-  transform: slide(20deg);
+  animation: slide 4s infinite;
+  animation-direction: alternate;
 }
 
 @keyframes slide {
   0% {
-    transform: translateX(0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  25% {
+    transform: translate(100px, 0) scale(2.5);
   }
   100% {
-    transform:  translateX(100px);
+    transform:  translate(100px, 100px) scale(2.5);
+    opacity: 0.3;
   }
 }
