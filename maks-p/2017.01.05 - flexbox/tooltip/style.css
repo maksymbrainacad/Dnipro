@@ -1,0 +1,36 @@
+.tooltip-link {}
+
+.tooltip-link:hover+.tooltip-content {
+    display: block;
+}
+
+.tooltip-content {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip::after{
+    opacity: 0;
+    transition: opacity 12s ease-out;
+}
+
+.tooltip:hover::after {
+    display: block;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    z-index: 999;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    content: attr(data-title);
+    opacity: 1;
+}
