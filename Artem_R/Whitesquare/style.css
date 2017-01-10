@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -35,10 +36,6 @@ footer, header, menu, nav, section {
 .clearfix:after {
 	clear: both;
 }
-body {
-	line-height: 1;
-	background: url("img/bg.png") #fff;
-}
 ol, ul {
 	list-style: none;
 }
@@ -49,48 +46,54 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 * {
 	box-sizing: border-box;
+}
+/*==================================================*/
+body {
+	line-height: 1;
+	background: url("img/bg.png") #fff;
+	height: auto;
 }
 .wrap {
 	width: 960px;
 	margin: 0 auto;
 }
+/* HEADER */
 .logo-search {
 	width: 100%;
 	height: 86px;
-	clear: both;
-	position: inherit;
 }
 .logo {
 	width: 70%;
-	float: left;
 	position: relative;
 }
 .logo a {
 	position: absolute;
 	padding-top: 25px;
 }
-.search {
-	float: right;
+form {
+	font-size: 0;
 	padding-top: 32px;
 	width: 21.6%;
-
 }
 .search input {
-	float: right;
 	height: 30px;
 	background: #f3f3f3;
 	border:none;
-
 }
 .search input[type=submit],
 .search input[type=text] {
 	outline: none;
 }
 .search input[type=submit] {
-	width: 22%;
+	width: 25%;
 	color: white;
 	background-color: #29c5e6;
 	border-bottom: 1px solid #29c5e6;
@@ -105,37 +108,45 @@ table {
 	border-top: 1px solid #e7e7e7;
 	border-left: 1px solid #e7e7e7;
 }
+/* HEADER NAV*/
 .top-menu {
 	width: 100%;
 	height: 40px;
 	background: #f3f3f3;
 	border: 1px solid #e7e7e7;
 }
+.top-menu .active {
+	background: #29c5e6;
+}
 .top-menu ul li {
+	position: relative;
 	width: 12.5%;
 	float: left;
 	text-align: center;
 }
-.top-menu ul li a {
+.top-menu a {
 	color: #b2b2b2;
-
-	font: 14px 'Oswald', sans-serif;
+	font: 400 14px 'Oswald', sans-serif;
 	text-transform: uppercase;
 	text-decoration: none;
 	line-height: 40px;
 	display: block;
-	height: 40px;
+	height: 39px;
+}
+.top-menu .active a {
+	color: #fff;
+}
+.top-menu  a:hover {
+	color: #ffffff;
+	background-color: #29c5e6;
 }
 .contact {
 	width: 123px;
 }
-.top-menu ul li a:hover {
-	background-color: #29c5e6;
-	color: #fff;
-}
+/* PAGE H1*/
 .our-projects {
 	text-transform: uppercase;
-	font: 40px 'Oswald';
+	font: 400 40px 'Oswald';
 	letter-spacing: 1px;
 	color: #7e7e7e;;
 }
@@ -163,15 +174,14 @@ table {
 	left: 287px;
 	top: 28px;
 }
+/* CENTER BLOCK*/
 .container {
 	position: relative;
 	width: 100%;
 }
-
-
+/* VERTICAL MENU*/
 .sidebar {
 	position: absolute;
-	float: left;
 	width: 250px;
 	background-color: #f3f3f3;
 	border-top: 1px solid #e7e7e7;
@@ -200,12 +210,207 @@ table {
 	left: 13px;
 	top: 19px;
 }
-.menu-item-active a::before {
-	background-color: #29c5e6;
-}
 .menu-item a:hover {
 	color: #29c5e6;
 }
 .menu-item a:hover::before {
 	background-color: #29c5e6;
+}
+/* VERTICAL SUB-MENU*/
+.vertical-sub-menu .menu-item a {
+	color: #b2b2b2;
+	font: 12px 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #e7e7e7;
+}
+.vertical-sub-menu .menu-item a:hover {
+	background: #eeeeee;
+}
+.menu-item .vertical-sub-menu {
+	display: none;
+	width: 100%;
+}
+.sidebar li:hover > .dropdown {
+	display: block;
+
+}
+/* MAP BLOCK*/
+.map {
+	top: 315px;
+	position: absolute;
+	width: 250px;
+}
+.map h3 {
+	font: 400 14px 'Oswald';
+	color: #ffffff;
+	background-color: #29c5e6;
+	text-transform: uppercase;
+	padding: 5px 0 5px 11px;
+}
+.map-box {
+	width: 250px;
+	height: 200px;
+	border: 1px solid #e7e7e7;
+}
+.map-img {
+	width: 240px;
+	height: 190px;
+	background: url("img/map.jpg") no-repeat -40px -60px;
+}
+/* PAGE CONTENT*/
+.content {
+	width: 682px;
+	height: auto;
+}
+.content h2 {
+	width: 100%;
+	height: 44px;
+	background-color: #29c5e6;
+	font: 300 30px 'Oswald', sans-serif;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+.content p {
+	font: 12px Tahoma, sans-serif;
+	color: #8f8f8f;
+	padding: 15px 0 30px 0;
+}
+.content .first-block {
+	width: auto;
+	height: 610px;
+	position: relative;
+	display: block;
+}
+.content .row-screenshot {
+	width: 100%;
+	height: auto;
+}
+.content .row-screenshot img {
+	width: 320px;
+	height: 180px;
+	border: 1px solid #c9c9c9;
+}
+.content .row-screenshot h3 {
+	margin-bottom: 15px;
+	font: 300 12px 'Oswald';
+	color: #8f8f8f;
+	text-align: center;
+	text-transform: uppercase;
+}
+.row-projects {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0 50px;
+	}
+.row-projects img {
+	width: 100px;
+	height: 100px;
+}
+
+.row-projects h3 {
+	font: 300 16px 'Oswald';
+	color: #8f8f8f;
+	text-transform: capitalize;
+}
+/* FOOTER BLOCK*/
+footer {
+	display: block;
+	position: relative;
+	margin-top: 30px;
+	width: 100%;
+	background-color: #7e7e7e;
+	overflow: hidden;
+}
+.twitter-feed {
+	width: 300px;
+	margin-top: 15px;
+}
+footer h2 {
+	font: 400 14px 'Oswald';
+	color: #ffffff;
+	text-transform: uppercase;
+}
+hr {
+	color: #919191;
+}
+.twitter-feed a {
+	font: 300 11px 'Tahoma';
+	color: #a8a3a3;
+}
+.twitter-feed p {
+	font: 300 11px 'Tahoma';
+	color: #dbdbdb;
+	text-transform: capitalize;
+}
+.sitemap {
+	width: 150px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.sitemap ul {
+	width: 45%;
+}
+.sitemap ul li a {
+	font: 300 11px 'Tahoma';
+	color: #dbdbdb;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.social-networcs {
+	width: 130px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.social-networcs ul li {
+	display: inline-block;
+}
+.icon-big {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+.i-facebook{
+		background: url("img/footer-social.png") no-repeat 0 0;
+	}
+.i-twitter {
+		background: url("img/footer-social.png") no-repeat -37px 0;
+}
+.i-google {
+		background: url("img/footer-social.png") no-repeat -74px 0;
+}
+.icon-small {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.i-vimeo {
+	background: url("img/footer-social.png") no-repeat 0 -40px;
+}
+.i-youtube {
+	background: url("img/footer-social.png") no-repeat -22px -40px;
+}
+.i-flickr {
+	background: url("img/footer-social.png") no-repeat -44px -40px;
+}
+.i-instagram {
+	background: url("img/footer-social.png") no-repeat -66px -40px;
+}
+.i-rss{
+	background: url("img/footer-social.png") no-repeat -88px -40px;
+}
+.logo-footer {
+	width: 320px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.logo-footer .row {
+	margin-top: 10px;
+	width: 100%;
+	text-align: right;
+}
+.logo-footer .row p {
+	font: 300 10px 'Tahoma';
+	color: #dbdbdb;
 }
