@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ' ';
+    display: block;
+}
+
+.page-wrapper {
+    max-width: 962px;
+    margin: 0 auto;
+}
+/*========================*/
+
+.left-side {
+    float: left;
+    width: 250px;
+}
+
+.right-side {
+    float: left;
+    width: 712px;
+    margin-top: 16px;
+}
+
+/*HEADER*/
+
+.topline {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.logo-img {
+    float: left;
+}
+
+.top-search {
+    float: right;
+    font-size: 0;
+    height: 36px;
+    width: 203px;
+}
+
+.search-box {
+    height: 32px;
+    width: 158px;
+    outline: 0 !important;
+    background-color: #f3f3f3;
+    border: none;
+    font: 12px Tahoma;
+    padding: 0 0 0 13px;
+}
+
+.submit-box {
+    background-color: #29c5e6;
+    color: #fefefe;
+    font: 400 12px Oswald;
+    height: 32px;
+    width: 42px;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+/*HORIZONTAL MENU*/
+
+.horizontal-menu {
+    background-color: #f3f3f3;
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+}
+
+.horizontal-menu-item {
+    float: left;
+    height: 42px;
+}
+
+.horizontal-menu-item a {
+    padding: 11px 32px 11px 33px;
+    text-transform: uppercase;
+    font: 400 14px Oswald;
+    color: #b2b2b2;
+    display: block;
+    text-decoration: none;
+}
+
+.horizontal-menu .active a {
+    background-color: #29c5e6;
+    color: #fff;
+}
+
+.horizontal-menu .horizontal-menu-item a:hover {
+    background-color: #29c5e6;
+    color: #fff;
+}
+
+
+/*HORIZONTAL SUBMENU*/
+
+.subhor-menu {
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    display: none;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.subhor-menu a {
+    padding: 11px 32px 11px 30px;
+}
+
+.horizontal-menu .horizontal-menu-item:hover .subhor-menu {
+    display: block;
+}
+
+
+/*PAGE TITLE*/
+
+.page-title h1 {
+    font: 400 40px Oswald;
+    color: #7e7e7e;
+    text-transform: uppercase;
+    padding-left: 34px;
+    margin-top: 20px;
+}
+
+
+/*VERTICAL MENU*/
+
+.vertical-menu {
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    width: 250px;
+    background-color: #f3f3f3;
+    position: relative;
+}
+
+.vertical-menu>.menu-item {
+    position: relative;
+}
+
+.vertical-menu>.menu-item>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 300 14px Oswald;
+    color: #8f8f8f;
+    padding: 5px 0px 5px 42px;
+    display: block;
+    position: relative;
+}
+
+.vertical-menu>.menu-item>a::before {
+    left: 20px;
+    top: 13px;
+    content: " ";
+    height: 7px;
+    width: 7px;
+    background-color: #8f8f8f;
+    position: absolute;
+}
+
+.vertical-menu>.menu-item-active>a::before {
+    background-color: #29c5e6;
+}
+
+.vertical-menu>.menu-item-active>a {
+    color: #29c5e6;
+}
+
+.vertical-menu>.menu-item:not(:first-child):hover {
+    background-color: #29c5e6;
+}
+
+.vertical-menu>.menu-item:not(:first-child)>a:hover {
+    color: #fff;
+}
+
+.vertical-menu>.menu-item:not(:first-child)>a:hover::before {
+    background-color: #fff;
+}
+
+
+/*SUBMENU*/
+
+.vertical-sub-menu {
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0px;
+    display: none;
+}
+
+.vertical-menu .menu-item:hover .vertical-sub-menu {
+    display: block;
+}
+
+.vertical-sub-menu .menu-item a {
+    text-decoration: none;
+    padding: 7px 0 7px 42px;
+    text-transform: uppercase;
+    font: 300 12px Oswald;
+    color: #9a9a9a;
+    display: block;
+}
+
+.vertical-sub-menu .menu-item-active a {
+    color: #29c5e6;
+    background-color: #eee;
+}
+
+.vertical-sub-menu .menu-item a:hover {
+    color: #fff;
+    background-color: #29c5e6;
+}
+
+
+/*OUR OFFICES*/
+
+.left-side h2 {
+    font: 14px/40px Oswald;
+    background-color: #29c5e6;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+    padding-left: 11px;
+}
+
+.our-offices {
+    padding: 11px;
+    background-color: #f3f3f3;
+}
+
+
+/*RIGHT SIDE*/
+
+.right-side h2 {
+    font: 300 30px Oswald;
+    background-color: #29c5e6;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 10px;
+    margin: 0px 0 16px 31px;
+}
+
+.right-side p {
+    font: 12px/18px Tahoma;
+    margin-left: 31px;
+}
+
+.image {
+    margin-left: 31px;
+    float: left;
+}
+
+.image-name {
+    text-align: center;
+    color: #8f8f8f;
+    font: 300 12px Oswald;
+    padding-bottom: 21px;
+}
+
+/*RELATED PROJECTS IMG*/
+
+.projects {
+    margin-left: 31px;
+}
+
+.projects img {
+    width: 100px;
+    height: 100px;
+}
+
+.project-img {
+    float: left;
+    margin-right: 45px;
+}
+
+.project-img:last-child {
+    margin-right: 0px;
+}
+
+.inner {
+    font: 300 16px Oswald;
+    color: #8f8f8f;
+}
+
+.inner::first-letter {
+    text-transform: capitalize;
+}
+
+
+/*FOOTER*/
+footer {
+    height: 112px;
+    background-color: #7e7e7e;
+    margin-top: 50px;
+}
+
+.footer-wrapper {
+    max-width: 962px;
+    margin: 0 auto;
+}
+
+/*twitter-feed*/
+
+
+
+.twitter-feed {
+    width: 300px;
+    padding-top: 12px;
+    font-size: 10px;
+    color: #fff;
+    float: left;
+}
+
+.twitter-feed p {
+    margin: 4px;
+}
+
+.twitter-feed>p:first-child {
+    color: #fff;
+    text-transform: uppercase;
+    font: 400 12px Oswald;
+    border-bottom: 1px solid #919191;
+}
+
+.twitter-feed>p:nth-child(2) {
+    color: #b4aeae;
+    border-bottom: 1px solid #919191;
+    display: inline-block;
+}
+
+
+/*SITEMAP*/
+
+.sitemap {
+    width: 150px;
+    float: left;
+    padding-top: 12px;
+    margin-left: 20px;
+}
+
+.sitemap p {
+    color: #fff;
+    text-transform: uppercase;
+    font: 400 12px Oswald;
+    border-bottom: 1px solid #919191;
+    margin: 4px;
+}
+
+
+.sitemap ul {
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  margin: 0;
+}
+
+.sitemap .inner1 {
+  float: left;
+  margin-left: 4px;
+}
+
+.sitemap div:last-child {
+  margin-left: 34px;
+}
+
+.inner1 a {
+  text-decoration: none;
+  font: 300 12px Oswald;
+  color: #fff;
+
+}
+
+/*SOCIAL NETWORKS*/
+.social-networks {
+  margin-left: 20px;
+  padding-top: 12px;
+  float: left;
+  width: 125px;
+}
+
+.social-networks p{
+  color: #fff;
+  text-transform: uppercase;
+  font: 400 12px Oswald;
+  border-bottom: 1px solid #919191;
+  margin: 4px;
+}
+
+.social-networks div {
+  padding-left: 5px;
+  font: 300 10px Oswald;
+  color: #919191;
+}
+
+.logo-footer {
+  margin-left: 145px;
+  padding-top: 12px;
+  font: 300 12px Oswald;
+  color: #fff;
+  float: left;
+}
+
+.logo-footer img {
+margin-left: 34px;
+}
