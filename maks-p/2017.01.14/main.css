@@ -1,0 +1,17 @@
+body {
+  color: #0982c1;
+  border: 1px dotted #0982c1;
+  max-width: 1024px;
+}
+ul.main {
+  /*<ul class="main">*/
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  padding-start: 0;
+}
+ul.sub-menu {
+  /*<ul class="sub-menu">*/
+  -webkit-padding-start: 10px;
+  -moz-padding-start: 10px;
+  padding-start: 10px;
+}
