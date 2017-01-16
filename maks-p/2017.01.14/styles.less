@@ -1,0 +1,17 @@
+@import "variable.less";
+
+@import "body.less";
+
+.padding-start(@value:0) {
+  -webkit-padding-start: @value;
+     -moz-padding-start: @value;
+          padding-start: @value;
+}
+
+ul.main { /*<ul class="main">*/
+  .padding-start();
+}
+
+ul.sub-menu { /*<ul class="sub-menu">*/
+  .padding-start(10px);
+}
