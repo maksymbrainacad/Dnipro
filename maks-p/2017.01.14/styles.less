@@ -2,10 +2,11 @@
 
 @import "body.less";
 
-.padding-start(@value:0) {
+.padding-start(@value:15px, @margin) {
   -webkit-padding-start: @value;
      -moz-padding-start: @value;
           padding-start: @value;
+          margin: @margin;
 }
 
 ul.main { /*<ul class="main">*/
@@ -13,5 +14,17 @@ ul.main { /*<ul class="main">*/
 }
 
 ul.sub-menu { /*<ul class="sub-menu">*/
-  .padding-start(10px);
+  .padding-start(10px, 10px);
+}
+
+.footer() {
+
+}
+
+footer.table {
+  .footer();
+}
+
+footer.main {
+  .footer();
 }
