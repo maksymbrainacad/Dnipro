@@ -27,3 +27,18 @@ footer.main {
   color: #aaaaaa;
   font-size: 16px;
 }
+.main-menu {
+  list-style-type: none;
+}
+.main-menu .item {
+  font-size: 24px;
+}
+.main-menu .item.active a {
+  color: green;
+}
+.main-menu .item a {
+  color: red;
+}
+.main-menu .item a:hover {
+  color: blue;
+}
