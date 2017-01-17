@@ -2,7 +2,7 @@
 
 @import "body.less";
 
-.padding-start(@value:15px, @margin) {
+.padding-start(@value:15px; @margin) {
   -webkit-padding-start: @value;
      -moz-padding-start: @value;
           padding-start: @value;
@@ -10,21 +10,55 @@
 }
 
 ul.main { /*<ul class="main">*/
-  .padding-start();
+  .padding-start(@margin: 5px);
 }
 
 ul.sub-menu { /*<ul class="sub-menu">*/
   .padding-start(10px, 10px);
 }
 
-.footer() {
-
+.footer(@bg: #00ff00; @color: #f3f3f3) {
+  background: @bg;
+  color: @color;
+  font-size: 16px;
 }
 
 footer.table {
-  .footer();
+  .footer(#ff0000, #3f3f3f);
 }
 
 footer.main {
-  .footer();
+  .footer(@color: #aaaaaa);
+}
+
+.main-menu {
+  list-style-type: none;
+  .item {
+    font-size: 24px;
+    &.active {
+      a {
+        color: green;
+      }
+    }
+    a {
+      color: red;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+.text-center(@height) {
+  text-align: center;
+  height: @height;
+  line-height: @height;
+}
+
+.footer {
+  .text-center(98px);
+}
+
+.menu {
+  .text-center(36px);
 }
