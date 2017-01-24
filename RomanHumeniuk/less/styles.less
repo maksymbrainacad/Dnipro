@@ -1,0 +1,90 @@
+@import "variable.less";
+@import "body.less";
+
+.padding-start(@value:15px; @margin){
+  -webkit-padding-start: @value;
+     -moz-padding-start: @value;
+          padding-start: @value;
+          margin: @margin;
+}
+ul.main{
+.padding-start(@margin: 5px);
+}
+ul.sub-menu{
+  .padding-start(10px ,10px);
+}
+.footer(@bg: #00ff00; @color: #f3f3f3){
+  background: @bg;
+  color: @color;
+}
+footer.table{
+  .footer(#ff0000, #3f3f3f);//меняем оба параметра
+}
+footer.main{
+  .footer(@color: #aaaaaa);//меняем только один параметр
+}
+.main-menu{
+  list-style-type: none;
+
+  .item{
+    font-size: 24px;
+    &.active{
+      a{
+        color: green;
+      }
+    }
+    a{
+      color: red;
+      &:hover{
+        color: blue;
+      }
+    }
+  }
+}
+.text-center(@height){
+  text-align: center;
+  height: @height;
+  line-height: @height;
+}
+.footer{
+  .text-center(98px);
+}
+.menu{
+  .text-center(36px);
+}
+@boxBackground: #3d82d1;
+@textColor: #246378;
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: @boxBackground;
+  color: @textColor;
+  &:hover{
+    background-color: darken(@boxBackground, 20%);
+    color: @textColor + #000000;
+  }
+}
+.autobox (@fontSize) when(@fontSize <= 16px) {
+  font-size: @fontSize;
+  width: 50px;
+  height: 50px;
+}
+.autobox (@fontSize) when (@fontSize > 16px) and (@fontSize < 24px) {
+  font-size: @fontSize;
+  width: 100px;
+  height: 100px;
+}
+.autobox (@fontSize) when (@fontSize >= 24px) {
+  font-size: @fontSize;
+  width: 150px;
+  height: 150px;
+}
+.box16px{
+  .autobox(16px);
+}
+.box22px{
+  .autobox(22px);
+}
+.box24px{
+  .autobox(24px);
+}
