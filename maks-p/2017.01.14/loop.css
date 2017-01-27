@@ -1,0 +1,41 @@
+div {
+  box-shadow: 5px;
+  width: 50px;
+  width: 40px;
+  width: 30px;
+  width: 20px;
+  width: 10px;
+}
+.column-width-1 {
+  width: 9.09090909%;
+}
+.column-width-2 {
+  width: 10%;
+}
+.column-width-3 {
+  width: 11.11111111%;
+}
+.column-width-4 {
+  width: 12.5%;
+}
+.column-width-5 {
+  width: 14.28571429%;
+}
+.column-width-6 {
+  width: 16.66666667%;
+}
+.column-width-7 {
+  width: 20%;
+}
+.column-width-8 {
+  width: 25%;
+}
+.column-width-9 {
+  width: 33.33333333%;
+}
+.column-width-10 {
+  width: 50%;
+}
+.column-width-11 {
+  width: 100%;
+}
