@@ -1,4 +1,7 @@
 @import "../vendor/normalize.css";
+* {
+  box-sizing: border-box;
+}
 .clearfix:after {
   display: block;
   content: '';
@@ -74,6 +77,7 @@ ul {
 }
 .main-nav {
   background-color: #dddddd;
+  margin-bottom: 10px;
 }
 .main-nav .nav-search input {
   border: 0;
@@ -86,7 +90,13 @@ ul {
   display: none;
 }
 .main-nav .nav {
-  margin: 0 0 10px 0;
+  margin: 0;
+}
+.main-nav .nav .nav-item-active {
+  background-color: #d45757;
+}
+.main-nav .nav .nav-item-active a {
+  color: #ffffff;
 }
 .main-nav .nav li a {
   color: #717171;
@@ -107,4 +117,100 @@ ul {
   .main .nav:target {
     display: block;
   }
+}
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .main-nav .nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.news-box-item {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .news-box {
+    /*display: flex;
+    flex-direction: row;*/
+    margin: 0 -15px;
+  }
+  .news-box:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+  .news-box-item {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+  }
+}
+.news-box-item-image {
+  position: relative;
+}
+.news-box-item-image {
+  height: 170px;
+  width: 100%;
+}
+.news-box-item-label {
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+  padding: 3px;
+  position: absolute;
+  left: 5px;
+  top: -5px;
+}
+.news-box-item-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.news-box-item-link {
+  height: 36px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.news-box-item-link a {
+  color: #d45757;
+  font: Tahoma 12px;
+  text-decoration: none;
+}
+.news-box-item-link a:hover {
+  text-decoration: underline;
+}
+.news-box-item-metainfo {
+  color: gray;
+  font: Tahoma 10px;
+  margin-bottom: 10px;
+}
+.news-box-item-metainfo-views {
+  margin-left: 10px;
+}
+.news-box-item-desc {
+  font: Tahoma 12px;
+  overflow: hidden;
+  height: 110px;
+}
+.second-page:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.main-box {
+  float: left;
+  width: 60%;
+}
+.menu-box {
+  float: left;
+  width: 40%;
+}
+
+.article-name {
+
 }

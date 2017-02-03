@@ -1,5 +1,7 @@
 .main-nav {
   background-color: #dddddd;
+  margin-bottom: 10px;
+
   .nav-search input {
     border: 0;
     color: #ffffff;
@@ -11,7 +13,15 @@
    display: none;
  }
   .nav {
-    margin: 0 0 10px 0;
+    margin: 0;
+
+   .nav-item-active {
+      background-color: @activeColor;
+
+      a {
+        color: @white;
+      }
+    }
 
     li {
       a {
@@ -36,5 +46,17 @@
   }
   .main .nav:target {
     display: block;
+  }
+}
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
