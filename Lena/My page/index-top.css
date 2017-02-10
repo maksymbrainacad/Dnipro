@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    left: 220px;
+    height: 65px;
+    width: 925px;
+}
+
+.picture {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 155px;
+    height: 41px;
+    display: block;
+}
+
+.logo {
+    max-width: 155px;
+}
+
+.search-form {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    height: 41px;
+    display: block;
+}
+
+.search {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0;
+}
+
+.search-field {
+    width: 154px;
+    height: 30px;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.button-search {
+    height: 30px;
+    width: 41px;
+    background-color: #28c5e7;
+    text-transform: uppercase;
+    font-family: ;
+    font-size: 16px;
+    color: #ffffff;
+    border-right: 1px solid #28c5e7;
+    border-top: 2px solid #28c5e7;
+    border-bottom: 5px solid #28c5e7;
+    border-left: none;
+}
+
+.horizontal-menu {
+    position: absolute;
+    margin: 0 auto;
+    top: 86px;
+    left: 220px;
+    height: 40px;
+    width: 925px;
+}
+
+.col {
+    width: 12.5%;
+    height: 39px;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: PT Sans Narrow;
+    text-align: center;
+    line-height: 39px;
+    font-weight: bold;
+    background-color: #f2f4f1;
+}
+
+.col>a {
+    text-decoration: none;
+    color: #7b7f80;
+}
+
+.col-projects>a {
+    color: #ffffff;
+    background-color: #28c5e7;
+}
+
+.col-projects {
+    background-color: #28c5e7;
+}
+
+.col:hover {
+    color: #ffffff;
+    background-color: #28c5e7;
+}
+
+.col:hover a {
+    color: #ffffff;
+}
+
+.subtitle {
+    position: absolute;
+    top: 121px;
+    left: 220px;
+    width: 925px;
+}
+
+.first-column {
+    height: 26px;
+}
+
+.column-subtitle {
+    display: block;
+    text-align: center;
+    max-height: 36px;
+    min-height: 36px;
+}
+
+.col1 {
+    width: 28px;
+}
+
+.col2 {
+    width: 245px;
+}
+
+.col2>a {
+    padding: 0;
+    font-size: 26px;
+    color: #7b7f80;
+    font-family: PT Sans Narrow;
+    font-weight: bold;
+}
+
+.col3 {
+    width: 652px;
+}
+
+
+/* ВЕРТИКАЛЬНОЕ МЕНЮ */
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    position: absolute;
+    top: 225px;
+    left: 220px;
+}
+
+.vertical_menu {
+    margin: 0;
+    border-left: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    width: 232px;
+    background: #f3f3f3;
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+}
+
+.vertical_menu>.item {
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+
+.item>a {
+    display: block;
+    height: 36px;
+}
+
+.vertical_menu>.item>a:hover {
+    color: #00bfff;
+}
+
+.vertical_menu>.item>a::before {
+    content: " ";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    top: 15px;
+    left: 5px;
+    background-color: #a6a6a6;
+}
+
+.vertical_menu>.item>a:hover::before {
+    background-color: #00bfff;
+}
+
+.vertical_menu>.item>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: PT Sans Narrow;
+    font-size: 17px;
+    color: #a6a6a6;
+    position: relative;
+    padding: 7px 0px 7px 20px;
+}
+
+.sub_menu {
+    border-bottom: 1px solid #ebebeb;
+    -webkit-padding-start: 0;
+}
+
+.hide:hover .sub {
+    display: block;
+}
+
+.sub {
+    background-color: #e7e7e7;
+    border-top: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    display: none;
+    height: 35px;
+    padding: 9px 0px 9px 0px;
+}
+
+.sub>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: PT Sans Narrow;
+    font-size: 16px;
+    font-size: 14px;
+    color: #a6a6a6;
+    display: block;
+    padding: 0 0 0 20px;
+}
+
+.sub:hover {
+    color: #00bfff;
+    background-color: #f3f3f3;
+}
+
+.sub:hover>a {
+    color: #00bfff;
+}
+
+.gap-below-menu {
+    height: 29px;
+    background-color: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
+/* КАРТА */
+
+.map-title {
+    color: #ffffff;
+    background-color: #28c5e7;
+    height: 40px;
+    font-family: PT Sans Narrow;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.map {
+    height: 185px;
+    max-width: 232px;
+    max-height: 185px;
+    padding: 2px 2px;
+}
+
+
+/* SUBMENU2 */
+
+.sub-menu-2 {
+    position: absolute;
+    width: 652px;
+    height: 36px;
+    top: 225px;
+    left: 494px;
+    line-height: 36px;
+    background-color: #28c5e7;
+}
+
+.submenu2 {
+    color: #ffffff;
+    font-family: PT Sans Narrow;
+    font-size: 28px;
+}
+
+.content {
+    position: absolute;
+    width: 652px;
+    left: 494px;
+    top: 287px;
+    font-family: PT Sans Narrow;
+    color: #7b7f80;
+    text-align: justify;
+}
+
+/* КАРТИНКИ */
+
+.screenshots {
+    position: absolute;
+    display: block;
+    width: 652px;
+    left: 494px;
+    top: 425px;
+    height: 376px;
+}
+
+.tools {
+    position: absolute;
+    width: 321px;
+    height: 176px;
+}
+
+.screen {
+  max-width: 321px;
+  max-height: 176px;
+}
+
+.screenshot1 {
+    top: 0;
+    left: 0;
+}
+
+.screenshot2 {
+    top: 0;
+    right: 0;
+}
+
+.screenshot3 {
+    bottom: 0;
+    left: 0;
+}
+
+.screenshot4 {
+    bottom: 0;
+    right: 0;
+}
+
+/* ПОДМЕНЮ TECHNOLJGY */
+
+.sub-menu-3 {
+    position: absolute;
+    width: 652px;
+    height: 36px;
+    top: 845px;
+    left: 494px;
+    line-height: 36px;
+    background-color: #28c5e7;
+}
+
+.submenu3 {
+    color: #ffffff;
+    font-family: PT Sans Narrow;
+    font-size: 28px;
+}
+
+.content2 {
+    position: absolute;
+    width: 652px;
+    left: 494px;
+    top: 905px;
+    font-family: PT Sans Narrow;
+    color: #7b7f80;
+    text-align: justify;
+}
+
+/* ПОДМЕНЮ RELATED PROJECTS */
+
+.sub-menu-4 {
+    position: absolute;
+    width: 652px;
+    height: 36px;
+    top: 1055px;
+    left: 494px;
+    line-height: 36px;
+    background-color: #28c5e7;
+}
+
+.submenu4 {
+    color: #ffffff;
+    font-family: PT Sans Narrow;
+    font-size: 28px;
+}
+
+.projects-screens {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  width: 652px;
+  height: 128px;
+  top: 1092px;
+  left: 494px;
+}
+
+.tools-box {
+  position: absolute;
+  display: flex;
+  width: 96px;
+  height: 96px;
+}
+
+.project {
+  max-width: 96px;
+  max-height: 96px;
+}

@@ -1,0 +1,210 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.vertical-menu {
+  width: 220px;
+  -webkit-padding-start: 0;
+}
+
+.item {
+  background-color: #000000;
+  padding: 12px 20px 12px 20px;
+  border-right: 4px solid #1b9bff;
+}
+
+.item:hover {
+  background-color: #1b9bff;
+}
+
+.item-products > a {
+  position: relative;
+}
+
+.item-products > a::after {
+content: '+';
+position: absolute;
+right: -105px;
+}
+
+.vertical-sub-menu-hover {
+position: absolute;
+left: 224px;
+width: 200px;
+top: 57px;
+-webkit-padding-start: 0;
+border-right: 1px solid #167dce;
+border-left: 1px solid #167dce;
+border-bottom: 1px solid #167dce;
+display: none;
+}
+
+  .sub-menu {
+  padding: 12px 20px 12px 20px;
+  background-color: #1b9bff;
+  border-top: 1px solid #167dce;
+}
+
+.sub-menu > a::after {
+  content: '+';
+  right: 14px;
+  position: absolute;
+}
+
+.item-products:hover .vertical-sub-menu-hover {
+  display: block;
+}
+
+/*начало исправлений*/
+.sub {
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #167dce;
+  border-right: 1px solid #167dce;
+  border-bottom: 1px solid #167dce;
+  border-left: 1px solid #167dce;
+  background-color: #1b9bff;
+  position: absolute;
+  left: 100%;
+  width: 150px;
+  visibility: hidden;
+}
+
+.product1-hover-sub1 {
+  top: 0;
+}
+
+.sub-menu:hover .product1-hover-sub1 {
+visibility: visible;
+}
+
+.product1-hover-sub2 {
+  top: 43px;
+}
+
+.sub-menu:hover .product1-hover-sub2 {
+visibility: visible;
+}
+
+.product2-hover-sub1 {
+  top: 43px;
+}
+
+.sub-menu:hover .product2-hover-sub1 {
+visibility: visible;
+}
+
+.product2-hover-sub2 {
+  top: 86px;
+}
+
+.sub-menu:hover .product2-hover-sub2{
+visibility: visible;
+}
+
+.sub:hover {
+  background-color: #4eb1ff;
+}
+
+.sub-menu:hover {
+  background-color: #4eb1ff;
+}
+/*.product1-hover-sub1 {
+  -webkit-padding-start: 0px;
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #167dce;
+  border-right: 1px solid #167dce;
+  border-bottom: 1px solid #167dce;
+  border-left: 1px solid #167dce;
+  top: 0px;
+  background-color: #1b9bff;
+  position: absolute;
+  left: 100%;
+  width: 150px;
+  display: none;
+}
+
+.sub-menu:hover .product1-hover-sub1 {
+display: block;
+}
+
+.product1-hover-sub2 {
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #167dce;
+  border-right: 1px solid #167dce;
+  border-bottom: 1px solid #167dce;
+  border-left: 1px solid #167dce;
+  top: 43px;
+  background-color: #1b9bff;
+  position: absolute;
+  left: 100%;
+  width: 150px;
+  display: none;
+}
+
+.sub-menu:hover .product1-hover-sub2 {
+display: block;
+}
+
+.product2-hover-sub1 {
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #167dce;
+  border-right: 1px solid #167dce;
+  border-bottom: 1px solid #167dce;
+  border-left: 1px solid #167dce;
+  top: 43px;
+  background-color: #1b9bff;
+  position: absolute;
+  left: 100%;
+  width: 150px;
+  visibility: hidden;
+}
+
+.sub-menu:hover .product2-hover-sub1 {
+visibility: visible;
+}
+
+.product2-hover-sub2 {
+  padding: 12px 20px 12px 20px;
+  border-top: 1px solid #167dce;
+  border-right: 1px solid #167dce;
+  border-bottom: 1px solid #167dce;
+  border-left: 1px solid #167dce;
+  top: 86px;
+  background-color: #1b9bff;
+  position: absolute;
+  left: 100%;
+  width: 150px;
+  display: none;
+}
+
+.sub-menu:hover .product2-hover-sub2{
+  display: block;
+}
+
+.sub-menu:hover {
+  background-color: #4eb1ff;
+}
+
+.product1-hover-sub1:hover {
+  background-color: #4eb1ff;
+}
+
+.product1-hover-sub2:hover {
+  background-color: #4eb1ff;
+}
+
+.product2-hover-sub1:hover {
+  background-color: #4eb1ff;
+}
+
+.product2-hover-sub2:hover {
+  background-color: #4eb1ff;
+}

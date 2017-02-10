@@ -1,0 +1,72 @@
+ul {
+  list-style-type: none;
+}
+
+.vertical_menu {
+  border-left: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  width: 240px;
+  background: #f3f3f3;
+  -webkit-padding-start: 0;
+}
+
+.vertical_menu > .item {
+  border-bottom: 1px solid #ebebeb;
+  position: relative;
+}
+
+.vertical_menu > .item > a:hover {
+color: #00bfff;
+}
+
+.vertical_menu > .item > a::before {
+content: " ";
+position: absolute;
+width: 6px;
+height: 6px;
+top: 10px;
+left: 5px;
+background-color: #a6a6a6;
+}
+
+.vertical_menu > .item > a:hover::before {
+background-color: #00bfff;
+}
+
+.vertical_menu > .item > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  color: #a6a6a6;
+  display: block;
+  position: relative;
+  padding: 5px 0px 5px 20px;
+}
+
+.sub_menu {
+  border-bottom: 1px solid #ebebeb;
+  -webkit-padding-start: 0;
+}
+
+.sub {
+  background-color: #dcdcdc;
+  border-top: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+
+.sub > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  color: #a6a6a6;
+  display: block;
+  padding: 0 0 0 20px;
+}
+
+.sub > a:hover {
+  color: #00bfff;
+  background-color: #f3f3f3;
+}
