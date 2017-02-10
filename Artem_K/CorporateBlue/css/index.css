@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ' ';
+    display: block;
+}
+
+.page-wrapper {
+    max-width: 962px;
+    margin: 0 auto;
+}
+
+
+/*========================*/
+
+
+/*HEADER*/
+
+.topline {
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.logo-img {
+    float: left;
+}
+
+.top-search {
+    float: right;
+    font-size: 0;
+    height: 36px;
+    width: 203px;
+}
+
+.search-box {
+    height: 32px;
+    width: 158px;
+    outline: 0 !important;
+    background-color: #f3f3f3;
+    border: none;
+    font: 12px Tahoma;
+    padding: 0 0 0 13px;
+}
+
+.submit-box {
+    background-color: #29c5e6;
+    color: #fefefe;
+    font: 400 12px Oswald;
+    height: 32px;
+    width: 42px;
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+
+/*HORIZONTAL MENU*/
+
+.horizontal-menu {
+    background-color: #f3f3f3;
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+}
+
+.horizontal-menu-item {
+    float: left;
+    height: 42px;
+}
+
+.horizontal-menu-item a {
+    padding: 11px 32px 11px 33px;
+    text-transform: uppercase;
+    font: 400 14px Oswald;
+    color: #b2b2b2;
+    display: block;
+    text-decoration: none;
+}
+
+.horizontal-menu .active a {
+    background-color: #29c5e6;
+    color: #fff;
+}
+
+.horizontal-menu .horizontal-menu-item a:hover {
+    background-color: #29c5e6;
+    color: #fff;
+}
+
+
+/*HORIZONTAL SUBMENU*/
+
+.subhor-menu {
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    display: none;
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.subhor-menu a {
+    padding: 11px 32px 11px 30px;
+}
+
+.horizontal-menu .horizontal-menu-item:hover .subhor-menu {
+    display: block;
+}
+
+
+/*MAIN*/
+
+.slider div {
+    height: 280px;
+    background-color: #e2e2e2;
+    font: 300 42px Oswald;
+    text-transform: uppercase;
+    color: #5a5a5a;
+}
+
+.slider .item-hidden {
+    display: none;
+}
+
+.slider div p:first-child {
+    padding: 28px 0 0 40px;
+    margin-bottom: 0px;
+}
+
+.slider div p:last-child {
+    font-size: 20px;
+    color: #afafaf;
+    margin: 0;
+    padding-left: 40px;
+    text-transform: none;
+}
+
+.slider div p:last-child::first-letter {
+    text-transform: capitalize;
+}
+
+
+/*NAV*/
+
+.slider nav {
+    background-color: #f3f3f3;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.slider ol {
+    list-style-type: none;
+    counter-reset: item;
+    -webkit-padding-start: 0;
+    -moz-padding-start: 0;
+}
+
+.slider a {
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: #8f8f8f;
+    font: 300 18px/16px Oswald;
+}
+
+.slider li {
+    float: left;
+    margin-right: 64px;
+}
+
+.slider a::before {
+    content: counter(item) ' ';
+    counter-increment: item;
+    color: #fff;
+    font: 300 18px/22px Oswald;
+    background-color: #8f8f8f;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.slider .active {
+    color: #29c5e6;
+}
+
+.slider .active::before {
+    background-color: #29c5e6;
+}
+
+.slider li a:hover {
+    background-color: #29c5e6;
+    color: #fff;
+}
+
+.slider li a:hover::before {
+    background-color: #29c5e6;
+}
+
+
+/*ARTICLES 1 and 2*/
+
+.art-two {
+    margin-top: 25px;
+}
+
+.art-two .art {
+    width: 50%;
+    float: left;
+}
+
+h3 {
+    text-transform: uppercase;
+    font: 300 14px/17px Oswald;
+    color: #858585;
+}
+
+h3::before {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-color: #29c5e6;
+    content: '';
+    margin-right: 8px;
+}
+
+.art-two__sub {
+    float: left;
+}
+
+.art-two__sub img {
+    width: 140px;
+    height: 140px;
+}
+
+.last {
+    width: calc(100% - 142px);
+}
+
+.art-two__sub p {
+    font: 12px Tahoma;
+    color: #8f8f8f;
+    text-transform: none;
+    text-align: justify;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+}
+
+.art-two__sub a {
+    color: #525252;
+}
+
+.art-two__sub p:last-child {
+    color: #525252;
+}
+
+.art .italic_style {
+  font-style: italic;
+}
+
+/*ARTICLE 3 4 5*/
+
+.art-three .art {
+    width: calc(100%/3);
+    float: left;
+}
+
+.art-three .art-sub {
+  margin-bottom: 3px;
+}
+
+.art-three__sub p {
+    font: 12px Tahoma;
+    text-align: justify;
+    color: #8f8f8f;
+    padding: 0 20px 20px 0;
+    margin: 0;
+}
+
+.art-three__sub a {
+    color: #525252;
+}
+
+.sub_sub {
+  float: left;
+}
+
+.sub_sub p:first-child{
+  text-transform: uppercase;
+  color: #525252;
+}
+
+.sub_sub.last {
+  width: calc(100% - 40px);
+}
+
+.art-three__sub .sub_sub p {
+  padding: 0 20px 0 8px;
+}
+
+
+/*OUR CLIENTS*/
+.our-clients__pict {
+  float: left;
+  padding: 0 20px 0 20px;
+}
+
+/*FOOTER*/
+footer {
+    height: 112px;
+    background-color: #7e7e7e;
+    margin-top: 50px;
+}
+
+.footer-wrapper {
+    max-width: 962px;
+    margin: 0 auto;
+}
+
+/*twitter-feed*/
+
+.twitter-feed {
+    width: 300px;
+    padding-top: 12px;
+    font-size: 10px;
+    color: #fff;
+    float: left;
+}
+
+.twitter-feed p {
+    margin: 4px;
+}
+
+.twitter-feed>p:first-child {
+    color: #fff;
+    text-transform: uppercase;
+    font: 400 12px Oswald;
+    border-bottom: 1px solid #919191;
+}
+
+.twitter-feed>p:nth-child(2) {
+    color: #b4aeae;
+    border-bottom: 1px solid #919191;
+    display: inline-block;
+}
+
+
+/*SITEMAP*/
+
+.sitemap {
+    width: 150px;
+    float: left;
+    padding-top: 12px;
+    margin-left: 20px;
+}
+
+.sitemap p {
+    color: #fff;
+    text-transform: uppercase;
+    font: 400 12px Oswald;
+    border-bottom: 1px solid #919191;
+    margin: 4px;
+}
+
+
+.sitemap ul {
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  margin: 0;
+}
+
+.sitemap .inner1 {
+  float: left;
+  margin-left: 4px;
+}
+
+.sitemap div:last-child {
+  margin-left: 34px;
+}
+
+.inner1 a {
+  text-decoration: none;
+  font: 300 12px Oswald;
+  color: #fff;
+
+}
+
+/*SOCIAL NETWORKS*/
+.social-networks {
+  margin-left: 20px;
+  padding-top: 12px;
+  float: left;
+  width: 125px;
+}
+
+.social-networks p{
+  color: #fff;
+  text-transform: uppercase;
+  font: 400 12px Oswald;
+  border-bottom: 1px solid #919191;
+  margin: 4px;
+}
+
+.social-networks div {
+  padding-left: 5px;
+  font: 300 10px Oswald;
+  color: #919191;
+}
+
+.logo-footer {
+  margin-left: 145px;
+  padding-top: 12px;
+  font: 300 12px Oswald;
+  color: #fff;
+  float: left;
+}
+
+.logo-footer img {
+margin-left: 34px;
+}

@@ -1,0 +1,53 @@
+div {
+  box-sizing: border-box;
+  padding: 0.3em;
+  margin-top: 0.2em;
+  background-color: #25b39d;
+  margin-left: 0.3em;
+  text-align: center;
+}
+
+.ins {
+  padding: 0.3em;
+  background-color: white;
+  margin: auto;
+  width: 90px;
+  height: 50px;
+  border: ridge;
+  border-radius: 5px;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-6, .col-8 {
+float: left;
+height: 80px;
+border: 1px double silver;
+}
+
+.col-1 {
+  width: calc(8.33% - 0.3em);
+}
+
+.col-2 {
+  width: calc(16.66% - 0.3em);
+}
+
+.col-3 {
+  width: calc(24.99% - 0.3em);
+}
+
+.col-4 {
+  width: calc(33.32% - 0.3em);
+}
+
+.col-6 {
+  width: calc(49.98% - 0.3em);
+}
+
+.col-8 {
+  width: calc(66.64% - 0.3em);
+}
+.row::after {
+  clear: both;
+  display: block;
+  content: ' ';
+}

@@ -1,0 +1,22 @@
+.table1 td:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.table2 tr:hover  {
+  background-color: orangered;
+  color: white;
+}
+
+table, tr, td {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.textstrong {
+  font-weight: bold;
+}
+
+table {
+  margin: auto;
+}
