@@ -1,0 +1,75 @@
+body {
+  color: #0982c1;
+  border: 1px dotted #0982c1;
+  max-width: 1024px;
+}
+ul.main {
+  -webkit-padding-start: 15px;
+  -moz-padding-start: 15px;
+  padding-start: 15px;
+  margin: 5px;
+}
+ul.sub-menu {
+  -webkit-padding-start: 10px;
+  -moz-padding-start: 10px;
+  padding-start: 10px;
+  margin: 10px;
+}
+footer.table {
+  background: #ff0000;
+  color: #3f3f3f;
+}
+footer.main {
+  background: #00ff00;
+  color: #aaaaaa;
+}
+.main-menu {
+  list-style-type: none;
+}
+.main-menu .item {
+  font-size: 24px;
+}
+.main-menu .item.active a {
+  color: green;
+}
+.main-menu .item a {
+  color: red;
+}
+.main-menu .item a:hover {
+  color: blue;
+}
+.footer {
+  text-align: center;
+  height: 98px;
+  line-height: 98px;
+}
+.menu {
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3d82d1;
+  color: #246378;
+}
+.box:hover {
+  background-color: #205088;
+  color: #246378;
+}
+.box16px {
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+}
+.box22px {
+  font-size: 22px;
+  width: 100px;
+  height: 100px;
+}
+.box24px {
+  font-size: 24px;
+  width: 150px;
+  height: 150px;
+}

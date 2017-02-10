@@ -1,0 +1,18 @@
+.loop(@counter) when (@counter < 0){
+  .loop(@counter - 1);
+  width:  (10px * @counter);
+}
+.boxShadow (@width){
+  box-shadow: @width;
+}
+div {
+  .boxShadow(5px);
+  .loop(5);
+}
+.generate-columns(@n,@i: 1) when (@i =<@n){
+.column-width-@{i}{
+  width: (@i * 100% / @n);
+}
+.generate-columns(@n, (@i + 1));
+}
+.generate-columns(12);
